@@ -1,0 +1,26 @@
+// Mixin para centralizar um elemento usando flexbox
+@mixin center-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Mixin para criar um botão com estilo padrão
+@mixin default-button {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+// Mixin para criar um botão com parâmetros personalizados
+@mixin custom-button($bg-color, $text-color) {
+  @include default-button;
+  background-color: $bg-color;
+  color: $text-color;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: darken($bg-color, 10%);
+  }
+}
