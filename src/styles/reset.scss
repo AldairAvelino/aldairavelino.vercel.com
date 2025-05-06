@@ -1,0 +1,75 @@
+
+/* reset.scss */
+
+/* 1. Remove margem, padding e borda padrão */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 2. Remove estilos padrão de elementos tipográficos */
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+blockquote,
+figure,
+dl, dd {
+  margin: 0;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Definições básicas para corpo e fontes */
+body {
+  line-height: 1.5;
+  font-family: system-ui, sans-serif;
+  background-color: #fff;
+  color: #000;
+}
+
+/* 4. Elementos interativos */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* 5. Imagens e mídia */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Tabelas */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* 7. Remove aspas automáticas de blockquotes e q */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+}
