@@ -1,1 +1,184 @@
-<p>header works!</p>
+<header class="fixed w-full top-0 z-50 bg-white dark:bg-gray-900">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <!-- Logo (visible only on desktop or when mobile menu is closed) -->
+    <a *ngIf="!isMobileMenuOpen || !isMobile" href="#" class="text-2xl font-bold text-gray-900 dark:text-white">&lt;/&gt;</a>
+    <div *ngIf="isMobileMenuOpen && isMobile" class="w-8"></div> <!-- Placeholder when logo is hidden -->
+
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex items-center space-x-8">
+      <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+      <a href="#work" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Work</a>
+      <a href="#testimonials" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Testimonials</a>
+      <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+
+      <!-- Theme Toggle -->
+      <button
+        (click)="themeService.toggleTheme()"
+        class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+        aria-label="Toggle theme"
+      >
+        <span class="block dark:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </span>
+        <span class="hidden dark:block">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path>
+            <path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path>
+            <path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path>
+            <path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path>
+            <path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+        </span>
+      </button>
+
+      <!-- Download CV Button -->
+      <a
+        href="/assets/cv.pdf"
+        download
+        class="px-4 py-2 rounded-lg bg-gray-900 dark:bg-gray-800 text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors"
+      >
+        Download CV
+      </a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button
+      (click)="toggleMobileMenu()"
+      class="md:hidden p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+      aria-label="Toggle menu"
+    >
+      <div class="w-6 h-6 flex flex-col justify-center space-y-1.5 relative">
+        <span
+          class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-transform duration-200"
+          [class.rotate-45]="isMobileMenuOpen"
+          [class.translate-y-2]="isMobileMenuOpen"
+        ></span>
+        <span
+          class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-opacity duration-200"
+          [class.opacity-0]="isMobileMenuOpen"
+        ></span>
+        <span
+          class="w-6 h-0.5 bg-gray-600 dark:bg-gray-300 transition-transform duration-200"
+          [class.-rotate-45]="isMobileMenuOpen"
+          [class.-translate-y-2]="isMobileMenuOpen"
+        ></span>
+      </div>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div
+    *ngIf="isMobileMenuOpen"
+    [@slideInOut]
+    class="fixed inset-0 top-0 z-40 md:hidden flex"
+  >
+    <!-- Gray sidebar section -->
+    <div class="w-16 bg-gray-100 dark:bg-gray-800 h-full"></div>
+
+    <!-- White main section -->
+    <div class="flex-1 bg-white dark:bg-gray-900 border-l border-gray-200 dark:border-gray-700 shadow-lg">
+      <!-- Header with logo and close button aligned -->
+      <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-gray-800">
+        <!-- Logo aligned with close button -->
+        <a href="#" class="text-2xl font-bold text-gray-900 dark:text-white">&lt;/&gt;</a>
+
+        <!-- Close button -->
+        <button
+          (click)="toggleMobileMenu()"
+          class="p-2 text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+          aria-label="Close menu"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M18 6 6 18"></path>
+            <path d="m6 6 12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Menu content -->
+      <div class="px-6 py-6">
+        <!-- Horizontal line separator - only appears when menu is open -->
+        <div
+          *ngIf="showSeparator"
+          [@fadeIn]
+          class="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent mb-8"
+        ></div>
+
+        <!-- Menu items with more spacing -->
+        <div class="space-y-6">
+          <a
+            href="#about"
+            (click)="toggleMobileMenu()"
+            class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            About
+          </a>
+          <a
+            href="#work"
+            (click)="toggleMobileMenu()"
+            class="block text-blue-600 dark:text-blue-400 transition-colors"
+          >
+            Work
+          </a>
+          <a
+            href="#testimonials"
+            (click)="toggleMobileMenu()"
+            class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            Testimonials
+          </a>
+          <a
+            href="#contact"
+            (click)="toggleMobileMenu()"
+            class="block text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+          >
+            Contact
+          </a>
+
+          <!-- Theme Toggle -->
+          <div class="flex items-center justify-between py-2 text-gray-600 dark:text-gray-300">
+            <span>Switch Theme</span>
+            <button
+              (click)="themeService.toggleTheme()"
+              class="p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+            >
+              <span class="block dark:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600">
+                  <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+                </svg>
+              </span>
+              <span class="hidden dark:block">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300">
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+              </span>
+            </button>
+          </div>
+
+          <!-- Download CV Button -->
+          <a
+            href="/assets/cv.pdf"
+            download
+            class="block w-full px-4 py-3 text-center rounded-lg bg-gray-900 dark:bg-gray-800 text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors mt-8"
+          >
+            Download CV
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
