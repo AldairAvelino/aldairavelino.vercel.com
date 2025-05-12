@@ -1,6 +1,8 @@
 export interface Skill {
-  name: string
-  iconUrl: string
+  name: string;
+  lightIcon: string;
+  darkIcon?: string;
+  currentIcon?: string;
 }
 
 export interface Experience {
