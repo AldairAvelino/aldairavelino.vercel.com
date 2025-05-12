@@ -1,40 +1,80 @@
-<section class="container mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16">
-  <div class="flex flex-col md:flex-row items-center md:space-x-12">
-    <div class="w-full md:w-1/2 mb-8 md:mb-0 flex justify-center">
-      <div class="relative w-[280px] h-[280px] md:w-[320px] md:h-[320px]">
-        <div class="absolute top-4 left-4 right-0 bottom-0 bg-gray-200 dark:bg-gray-800 transform translate-x-2 translate-y-2 -z-10 rounded-lg"></div>
-        <div class="absolute right-2 bottom-2 w-full h-full bg-white dark:bg-gray-700 -z-10 rounded-lg"></div>
-        <img
-          src="assets/images/me/about.jpeg"
-          alt="Aldair working"
-          class="absolute inset-0 w-full h-full object-cover shadow-lg rounded-lg"
-        />
+<section id="about" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- About me badge - centered on all screen sizes -->
+    <div class="flex justify-center mb-12">
+      <div class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-gray-700 dark:text-gray-300">
+        About me
       </div>
     </div>
 
-    <div class="w-full md:w-1/2">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-6">
-        About me
-      </h2>
-      <div class="prose dark:prose-invert max-w-none">
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
+    <div class="flex flex-col md:flex-row items-start md:space-x-12 lg:space-x-16">
+      <!-- Image with different styles for mobile and desktop -->
+      <div class="w-full md:w-5/12 mb-10 md:mb-0">
+        <!-- Mobile view: Simplified layered effect -->
+        <div class="md:hidden flex justify-center">
+          <div class="relative w-[280px] h-[350px]">
+            <!-- Gray background - simplified positioning -->
+            <div class="absolute inset-0 top-5 bottom-[-0.3rem] left-[-1.3rem] right-[-0.3rem] bg-gray-200 dark:bg-gray-800 translate-x-2 translate-y-2"></div>
+
+            <!-- White frame with image -->
+            <div class="absolute inset-0 bg-white dark:bg-gray-700 p-2">
+              <img
+                src="assets/images/me/about.jpeg"
+                alt="Aldair standing in front of a colorful painting"
+                class="w-full h-full object-cover"
+                onError="this.src='assets/images/placeholder.jpg'"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Desktop view: Image with more complex layered effect -->
+        <div class="hidden md:block">
+          <div class="relative w-[320px] h-[400px]">
+            <!-- Gray background div -->
+            <div class="absolute top-2 left-8 right-0 w-full h-full bg-gray-200 dark:bg-gray-800"></div>
+
+            <!-- White frame div -->
+            <div class="absolute top-[-1.5rem] left-12 right-2 bottom-2 translate-x-4 w-full h-full bg-white dark:bg-gray-700 p-2">
+              <!-- Actual image -->
+              <img
+                src="assets/images/me/about.jpeg"
+                alt="Aldair standing in front of a colorful painting"
+                class="w-full h-full object-cover"
+                onError="this.src='assets/images/placeholder.jpg'"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- About content -->
+      <div class="w-full md:w-7/12">
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-6">
           Curious about me? Here you have it:
-        </p>
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-          I'm diving headfirst into the world of coding as a Junior Fullstack Developer, fueled by my passion to turn ideas into cool, efficient solutions. My journey's all about blending creativity with technology to make things work smoother than butter on a hot pan! Let's build some digital magic together!
-        </p>
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-          I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development. My approach is to create seamless, intuitive user experiences that not only meet but exceed expectations. Whether it's designing a sleek interface or optimizing backend processes, I'm all in.
-        </p>
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-          You can follow me on Twitter where I share tech-related bites and build in public. Join me as I navigate the ever-evolving landscape of technology, sharing insights, challenges, and breakthroughs along the way. You can also check out my GitHub to see the projects I'm working on and maybe even collaborate on something exciting!
-        </p>
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-          One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite <span class="inline-block"><img src="assets/images/blink.png" alt="blink emogi"></span>. I'm always eager to connect with like-minded individuals and businesses looking to bring innovative ideas to life. Let's create something amazing together!
-        </p>
-        <p class="text-gray-700 dark:text-gray-300 mb-4 leading-relaxed">
-          "Programs must be written for people to read, and only incidentally for machines to execute." - <strong>Harold Abelson</strong>
-        </p>
+        </h2>
+
+        <div class="space-y-4 text-gray-700 dark:text-gray-300">
+          <p class="leading-relaxed">
+            I'm diving headfirst into the world of coding as a Junior Fullstack Developer, fueled by my passion to turn ideas into cool, efficient solutions. My journey's all about blending creativity with technology to make things work smoother than butter on a hot pan! Let's build some digital magic together!
+          </p>
+
+          <p class="leading-relaxed">
+            I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development. My approach is to create seamless, intuitive user experiences that not only meet but exceed expectations. Whether it's designing a sleek interface or optimizing backend processes, I'm all in.
+          </p>
+
+          <p class="leading-relaxed">
+            You can follow me on <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">Twitter</a> where I share tech-related bites and build in public. Join me as I navigate the ever-evolving landscape of technology, sharing insights, challenges, and breakthroughs along the way. You can also check out my <a href="#" class="text-blue-600 dark:text-blue-400 hover:underline">GitHub</a> to see the projects I'm working on and maybe even collaborate on something exciting!
+          </p>
+
+          <p class="leading-relaxed">
+            One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite <span class="inline-block"><img src="assets/images/blink.png" alt="blink emogi"></span>. I'm always eager to connect with like-minded individuals and businesses looking to bring innovative ideas to life. Let's create something amazing together!
+          </p>
+
+          <p class="leading-relaxed ">
+            "Programs must be written for people to read, and only incidentally for machines to execute." - <span class="font-semibold">Harold Abelson</span>
+          </p>
+        </div>
       </div>
     </div>
   </div>
