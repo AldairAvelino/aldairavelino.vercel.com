@@ -5,11 +5,16 @@ export interface Skill {
   currentIcon?: string;
 }
 
+export interface Work {
+}
+
 export interface Experience {
-  title: string
-  company: string
-  period: string
-  description: string
+  title: string;
+  company?: string;
+  logo?: string;
+  startDate: string;
+  endDate: string;
+  responsibilities: string[];
 }
 
 export interface Project {
