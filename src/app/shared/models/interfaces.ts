@@ -24,10 +24,11 @@ export interface Experience {
 }
 
 export interface Testimonial {
-  name: string
-  role: string
-  avatarUrl: string
-  text: string
+  quote: string;
+  name: string;
+  title: string;
+  company: string;
+  avatar: string;
 }
 
 export type Theme = "light" | "dark"
