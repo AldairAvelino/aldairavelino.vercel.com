@@ -1,1 +1,62 @@
-<p>experience works!</p>
+<section id="work" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Experience badge -->
+    <div class="flex justify-center mb-6">
+      <div class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-gray-700 dark:text-gray-300">
+        Experience
+      </div>
+    </div>
+
+    <!-- Experience heading -->
+    <h2 class="text-center text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12">
+      Here is a quick summary of my most recent experiences:
+    </h2>
+
+    <!-- Experience cards -->
+    <div class="space-y-8">
+      <ng-container *ngFor="let experience of experiences">
+        <!-- Experience card -->
+        <div class="bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden">
+          <div class="md:flex">
+            <!-- Logo - Full width on mobile, fixed width on desktop -->
+            <div class="md:w-64 shrink-0">
+              <div class="bg-gradient-to-r from-purple-700 to-indigo-900 h-24 md:h-full flex items-center justify-center p-4">
+                <span class="text-white font-bold text-xl">{{ experience.company }}</span>
+                <ng-container *ngIf="!experience.company">
+                  <img src="{{ experience.logo }}" alt="logotipo" class="h-20 w-20 sm:h-24 sm:w-24 md:h-32 md:w-32 flex justify-center items-center rounded-full border-2 border-white dark:border-gray-800">
+                </ng-container>
+              </div>
+            </div>
+
+            <!-- Content -->
+            <div class="p-6 md:flex-1">
+              <!-- Mobile date (visible only on mobile) -->
+              <div class="md:hidden text-sm text-gray-500 dark:text-gray-400 mb-2">
+                {{ experience.startDate }} - {{ experience.endDate }}
+              </div>
+
+              <!-- Job title and date (desktop) -->
+              <div class="md:flex md:justify-between md:items-start">
+                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                  {{ experience.title }}
+                </h3>
+                <!-- Desktop date (hidden on mobile) -->
+                <div class="hidden md:block text-sm text-gray-500 dark:text-gray-400">
+                  {{ experience.startDate }} - {{ experience.endDate }}
+                </div>
+              </div>
+
+              <!-- Responsibilities -->
+              <ul class="mt-4 space-y-2">
+                <li *ngFor="let responsibility of experience.responsibilities" class="flex">
+                  <span class="text-gray-500 dark:text-gray-400 mr-2">•</span>
+                  <span class="text-gray-700 dark:text-gray-300">{{ responsibility }}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
