@@ -6,6 +6,12 @@ export interface Skill {
 }
 
 export interface Work {
+  title: string;
+  description: string;
+  image: string;
+  technologies: string[];
+  liveUrl: string;
+  githubUrl: string;
 }
 
 export interface Experience {
@@ -15,13 +21,6 @@ export interface Experience {
   startDate: string;
   endDate: string;
   responsibilities: string[];
-}
-
-export interface Project {
-  title: string
-  description: string
-  imageUrl: string
-  tags: string[]
 }
 
 export interface Testimonial {
