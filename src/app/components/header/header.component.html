@@ -1,7 +1,12 @@
 <header class="fixed w-full top-0 z-50 bg-white dark:bg-gray-900">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
     <!-- Logo (visible only on desktop or when mobile menu is closed) -->
-    <a *ngIf="!isMobileMenuOpen || !isMobile" href="#" class="text-2xl font-bold text-gray-900 dark:text-white">&lt;/&gt;</a>
+    <a *ngIf="!isMobileMenuOpen || !isMobile" href="#" class="text-2xl font-bold text-gray-900 dark:text-white">
+      <svg width="54" height="27" viewBox="0 0 54 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.888281 16.1499V12.3999L15.8883 5.79474V10.1094L5.61839 14.2322L5.75689 14.0085V14.5412L5.61839 14.3175L15.8883 18.4403V22.755L0.888281 16.1499ZM35.6409 0.159089L28.6096 26.2812H24.6998L31.7311 0.159089H35.6409ZM53.1117 16.1499L38.1117 22.755V18.4403L48.3816 14.3175L48.2431 14.5412V14.0085L48.3816 14.2322L38.1117 10.1094V5.79474L53.1117 12.3999V16.1499Z" />
+      </svg>
+
+    </a>
     <div *ngIf="isMobileMenuOpen && isMobile" class="w-8"></div> <!-- Placeholder when logo is hidden -->
 
     <!-- Desktop Menu -->
@@ -18,22 +23,21 @@
         aria-label="Toggle theme"
       >
         <span class="block dark:hidden">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-600">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-          </svg>
+          <img src="assets/images/icons/dark.svg" alt="moon icon">
         </span>
         <span class="hidden dark:block">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-gray-300">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2"></path>
-            <path d="M12 20v2"></path>
-            <path d="m4.93 4.93 1.41 1.41"></path>
-            <path d="m17.66 17.66 1.41 1.41"></path>
-            <path d="M2 12h2"></path>
-            <path d="M20 12h2"></path>
-            <path d="m6.34 17.66-1.41 1.41"></path>
-            <path d="m19.07 4.93-1.41 1.41"></path>
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 2V4" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 20V22" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M4.92993 4.92999L6.33993 6.33999" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M17.6599 17.66L19.0699 19.07" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M2 12H4" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20 12H22" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M6.33993 17.66L4.92993 19.07" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M19.0699 4.92999L17.6599 6.33999" stroke="#D1D5DB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
           </svg>
+
         </span>
       </button>
 
