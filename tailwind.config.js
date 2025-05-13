@@ -34,6 +34,9 @@ module.exports = {
           DEFAULT: '#0f172a',
           secondary: '#1e293b'
         }
+      },
+      screens: {
+        'xl1367': '1367px',
       }
     },
   },
