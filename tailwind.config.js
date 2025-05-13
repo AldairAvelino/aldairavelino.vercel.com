@@ -25,6 +25,9 @@ module.exports = {
           '85%': { transform: 'translateY(-2px)' }
         }
       },
+      fontFamily: {
+        inter: ['Inter', 'sans-serif'],
+      },
       colors: {
         primary: '#6366f1',
         dark: {
