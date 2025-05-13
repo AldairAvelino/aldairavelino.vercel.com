@@ -31,4 +31,9 @@ export interface Testimonial {
   avatar: string;
 }
 
+export interface Contact {
+  email: string;
+  phone: string;
+}
+
 export type Theme = "light" | "dark"
