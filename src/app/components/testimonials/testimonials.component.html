@@ -1,1 +1,48 @@
-<p>testimonials works!</p>
+<section id="testimonials" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Testimonials badge -->
+    <div class="flex justify-center mb-6">
+      <div class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-gray-700 dark:text-gray-300">
+        Testimonials
+      </div>
+    </div>
+
+    <!-- Testimonials heading -->
+    <h2 class="text-center text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12">
+      Nice things people have said about me:
+    </h2>
+
+    <!-- Testimonials grid -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
+      <ng-container *ngFor="let testimonial of testimonials">
+        <!-- Testimonial card with drop shadow -->
+        <div class="bg-white dark:bg-gray-800 rounded-2xl shadow-lg p-8 flex flex-col items-center">
+          <!-- Profile image - larger and centered -->
+          <div class="w-24 h-24 mb-8 overflow-hidden rounded-full">
+            <img
+              [src]="testimonial.avatar"
+              [alt]="testimonial.name"
+              class="w-full h-full object-cover"
+              onError="this.src='assets/images/placeholder.jpg'"
+            />
+          </div>
+
+          <!-- Quote - larger text with more spacing -->
+          <p class="text-gray-600 dark:text-gray-300 text-center mb-8 text-lg leading-relaxed">
+            "{{ testimonial.quote }}"
+          </p>
+
+          <!-- Name - larger and bolder -->
+          <h3 class="text-gray-900 dark:text-white font-bold text-2xl text-center mb-2">
+            {{ testimonial.name }}
+          </h3>
+
+          <!-- Title and company -->
+          <p class="text-gray-500 dark:text-gray-400 text-center">
+            {{ testimonial.title }}{{ testimonial.company ? ' - ' + testimonial.company : '' }}
+          </p>
+        </div>
+      </ng-container>
+    </div>
+  </div>
+</section>
