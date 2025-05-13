@@ -1,0 +1,90 @@
+@layer components {
+  /* HEADINGS */
+  .heading-h1-desktop {
+    @apply font-bold text-[60px] leading-[72px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h1-tablet {
+    @apply font-bold text-[48px] leading-[48px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h1-mobile {
+    @apply font-semibold text-[36px] leading-[40px] tracking-[0em] font-inter;
+  }
+
+  .heading-h2-desktop {
+    @apply font-semibold text-[36px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h2-mobile {
+    @apply font-semibold text-[18px] leading-[28px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h3-desktop-semi {
+    @apply font-semibold text-[30px] leading-[36px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h3-mobile-semi {
+    @apply font-semibold text-[24px] leading-[32px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h3-desktop-bold {
+    @apply font-bold text-[30px] leading-[36px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h3-mobile-bold {
+    @apply font-bold text-[24px] leading-[32px] tracking-[-0.02em] font-inter;
+  }
+
+  /* SUBTITLES */
+  .subtitle-desktop-regular {
+    @apply font-normal text-[20px] leading-[28px] tracking-[0em] font-inter;
+  }
+
+  .subtitle-desktop-semibold {
+    @apply font-semibold text-[20px] leading-[28px] tracking-[0em] font-inter;
+  }
+
+  .subtitle-mobile-regular {
+    @apply font-normal text-[18px] leading-[28px] tracking-[0em] font-inter;
+  }
+
+  .subtitle-mobile-semibold {
+    @apply font-semibold text-[18px] leading-[28px] tracking-[0em] font-inter;
+  }
+
+  /* BODY1 */
+  .body1-desktop {
+    @apply font-normal text-[18px] leading-[28px] tracking-[0em] font-inter;
+  }
+
+  .body1-mobile {
+    @apply font-normal text-[16px] leading-[24px] tracking-[0em] font-inter;
+  }
+
+  /* BODY2 */
+  .body2-regular {
+    @apply font-normal text-[16px] leading-[24px] tracking-[0em] font-inter;
+  }
+
+  .body2-semibold {
+    @apply font-semibold text-[16px] leading-[24px] tracking-[0em] font-inter;
+  }
+
+  .body2-medium {
+    @apply font-medium text-[16px] leading-[24px] tracking-[0em] font-inter;
+  }
+
+  .body2-underline {
+    @apply font-normal text-[16px] leading-[24px] underline tracking-[0em] font-inter;
+  }
+
+  /* BODY3 */
+  .body3-regular {
+    @apply font-normal text-[14px] leading-[20px] tracking-[0em] font-inter;
+  }
+
+  .body3-medium {
+    @apply font-medium text-[14px] leading-[20px] tracking-[0em] font-inter;
+  }
+}
