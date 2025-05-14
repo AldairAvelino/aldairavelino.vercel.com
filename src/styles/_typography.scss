@@ -24,8 +24,16 @@
     @apply font-semibold text-[18px] leading-[28px] tracking-[-0.02em] font-inter;
   }
 
+  .heading-h3-tv {
+    @apply font-semibold text-[36px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
   .heading-h3-desktop-semi {
     @apply font-semibold text-[30px] leading-[36px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h3-tablet-semi {
+    @apply font-semibold text-[28px] leading-[32px] tracking-[-0.02em] font-inter;
   }
 
   .heading-h3-mobile-semi {
