@@ -1,14 +1,14 @@
-<section id="work" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<section id="work" class="px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-40">
     <!-- Experience badge -->
-    <div class="flex justify-center mb-6">
-      <div class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-gray-700 dark:text-gray-300">
+    <div class="flex justify-center mb-4">
+      <div class="flex items-center justify-center body3-medium bg-gray-200 dark:bg-gray-700 rounded-full px-5 py-1 text-gray-600 dark:text-gray-300 w-32 h-8">
         Experience
       </div>
     </div>
 
     <!-- Experience heading -->
-    <h2 class="text-center text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12">
+    <h2 class="subtitle-mobile-regular lg:subtitle-desktop-regular xl1367:subtitle-tv-regular text-center text-gray-600 dark:text-gray-300 mb-12">
       Here is a quick summary of my most recent experiences:
     </h2>
 
@@ -31,17 +31,17 @@
             <!-- Content -->
             <div class="p-6 md:flex-1">
               <!-- Mobile date (visible only on mobile) -->
-              <div class="md:hidden text-sm text-gray-500 dark:text-gray-400 mb-2">
+              <div class="md:hidden body2-regular text-gray-700 dark:text-gray-200 mb-2">
                 {{ experience.startDate }} - {{ experience.endDate }}
               </div>
 
               <!-- Job title and date (desktop) -->
               <div class="md:flex md:justify-between md:items-start">
-                <h3 class="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 class="subtitle-mobile-semibold lg:subtitle-desktop-semibold xl1367:subtitle-tv-semibold text-gray-900 dark:text-gray-50">
                   {{ experience.title }}
                 </h3>
                 <!-- Desktop date (hidden on mobile) -->
-                <div class="hidden md:block text-sm text-gray-500 dark:text-gray-400">
+                <div class="hidden md:block body2-regular text-gray-700 dark:text-gray-200">
                   {{ experience.startDate }} - {{ experience.endDate }}
                 </div>
               </div>
@@ -49,8 +49,8 @@
               <!-- Responsibilities -->
               <ul class="mt-4 space-y-2">
                 <li *ngFor="let responsibility of experience.responsibilities" class="flex">
-                  <span class="text-gray-500 dark:text-gray-400 mr-2">•</span>
-                  <span class="text-gray-700 dark:text-gray-300">{{ responsibility }}</span>
+                  <span class="text-gray-600 dark:text-gray-300 mr-2">•</span>
+                  <span class="body2-regular text-gray-600 dark:text-gray-300">{{ responsibility }}</span>
                 </li>
               </ul>
             </div>
