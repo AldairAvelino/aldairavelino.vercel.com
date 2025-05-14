@@ -49,6 +49,14 @@
   }
 
   /* SUBTITLES */
+  .subtitle-tv-regular {
+    @apply font-normal text-[26px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
+  .subtitle-tv-semibold {
+    @apply font-semibold text-[26px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
   .subtitle-desktop-regular {
     @apply font-normal text-[20px] leading-[28px] tracking-[0em] font-inter;
   }
