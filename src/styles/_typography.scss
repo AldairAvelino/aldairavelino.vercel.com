@@ -1,5 +1,9 @@
 @layer components {
   /* HEADINGS */
+  .heading-h1-tv {
+    @apply font-bold text-[96px] leading-[88px] tracking-[-0.02em] font-inter;
+  }
+
   .heading-h1-desktop {
     @apply font-bold text-[60px] leading-[72px] tracking-[-0.02em] font-inter;
   }
