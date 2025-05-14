@@ -31,7 +31,6 @@ import { ThemeService } from '@core/services/theme.service';
 export class HeaderComponent {
   isMobileMenuOpen = false;
   isMobile = false;
-  showSeparator = false;
 
   constructor(public themeService: ThemeService) {
     this.checkMobile();
@@ -47,10 +46,8 @@ export class HeaderComponent {
 
     if (this.isMobileMenuOpen) {
       setTimeout(() => {
-        this.showSeparator = true;
       }, 100);
     } else {
-      this.showSeparator = false;
     }
 
     // Prevent scrolling when menu is open

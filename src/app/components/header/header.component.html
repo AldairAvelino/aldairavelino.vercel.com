@@ -5,16 +5,15 @@
       <svg width="54" height="27" viewBox="0 0 54 27" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
         <path d="M0.888281 16.1499V12.3999L15.8883 5.79474V10.1094L5.61839 14.2322L5.75689 14.0085V14.5412L5.61839 14.3175L15.8883 18.4403V22.755L0.888281 16.1499ZM35.6409 0.159089L28.6096 26.2812H24.6998L31.7311 0.159089H35.6409ZM53.1117 16.1499L38.1117 22.755V18.4403L48.3816 14.3175L48.2431 14.5412V14.0085L48.3816 14.2322L38.1117 10.1094V5.79474L53.1117 12.3999V16.1499Z" />
       </svg>
-
     </a>
     <div *ngIf="isMobileMenuOpen && isMobile" class="w-8"></div> <!-- Placeholder when logo is hidden -->
 
     <!-- Desktop Menu -->
     <div class="hidden md:flex items-center space-x-8">
-      <a href="#about" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
-      <a href="#work" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Work</a>
-      <a href="#testimonials" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Testimonials</a>
-      <a href="#contact" class="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+      <a href="#about" class="body2-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">About</a>
+      <a href="#work" class="body2-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Work</a>
+      <a href="#testimonials" class="body2-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Testimonials</a>
+      <a href="#contact" class="body2-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
 
       <!-- Theme Toggle -->
       <button
@@ -45,7 +44,7 @@
       <a
         href="/assets/cv.pdf"
         download
-        class="px-4 py-2 rounded-lg bg-gray-900 dark:bg-gray-800 text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors"
+        class="body2-medium px-4 py-2 rounded-lg bg-gray-900 dark:bg-gray-50 dark:text-gray-900 text-gray-50 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
       >
         Download CV
       </a>
@@ -86,9 +85,9 @@
     <div class="w-16 bg-gray-100 dark:bg-gray-800 h-full"></div>
 
     <!-- White main section -->
-    <div class="flex-1 bg-white dark:bg-gray-900 border-l border-gray-200 dark:border-gray-700 shadow-lg">
+    <div class="flex-1 bg-white dark:bg-gray-900 border-l border-gray-200 dark:border-gray-800 shadow-lg">
       <!-- Header with logo and close button aligned -->
-      <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-gray-800">
+      <div class="flex items-center justify-between px-6 py-4 border-b border-gray-100 dark:border-gray-700">
         <!-- Logo aligned with close button -->
         <a href="#" class="text-2xl font-bold text-gray-900 dark:text-white">&lt;/&gt;</a>
 
@@ -107,12 +106,6 @@
 
       <!-- Menu content -->
       <div class="px-6 py-6">
-        <!-- Horizontal line separator - only appears when menu is open -->
-        <div
-          *ngIf="showSeparator"
-          [@fadeIn]
-          class="h-px bg-gradient-to-r from-transparent via-gray-200 dark:via-gray-700 to-transparent mb-8"
-        ></div>
 
         <!-- Menu items with more spacing -->
         <div class="space-y-6">
@@ -177,7 +170,7 @@
           <a
             href="/assets/cv.pdf"
             download
-            class="block w-full px-4 py-3 text-center rounded-lg bg-gray-900 dark:bg-gray-800 text-white hover:bg-gray-800 dark:hover:bg-gray-700 transition-colors mt-8"
+            class="block w-full body2-medium px-4 py-3 text-center rounded-lg bg-gray-900 dark:bg-gray-50 dark:text-gray-900 text-gray-50 hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors mt-8"
           >
             Download CV
           </a>
