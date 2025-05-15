@@ -16,8 +16,16 @@
     @apply font-semibold text-[36px] leading-[40px] tracking-[0em] font-inter;
   }
 
+  .heading-h2-tv {
+    @apply font-semibold text-[48px] leading-[56px] tracking-[-0.02em] font-inter;
+  }
+
   .heading-h2-desktop {
     @apply font-semibold text-[36px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h2-tablet {
+    @apply font-semibold text-[30px] leading-[36px] tracking-[-0.02em] font-inter;
   }
 
   .heading-h2-mobile {
