@@ -1,14 +1,14 @@
-<section id="testimonials" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
-  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+<section id="testimonials" class=" px-4 sm:px-6 lg:px-8 py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+  <div class="container mx-auto px-4 sm:px-6 lg:px-16">
     <!-- Testimonials badge -->
     <div class="flex justify-center mb-6">
-      <div class="bg-gray-200 dark:bg-gray-800 rounded-full px-4 py-1 text-sm text-gray-700 dark:text-gray-300">
+      <div class="flex items-center justify-center body3-medium bg-gray-200 dark:bg-gray-700 rounded-full px-5 py-1 text-gray-600 dark:text-gray-300 w-32 h-8">
         Testimonials
       </div>
     </div>
 
     <!-- Testimonials heading -->
-    <h2 class="text-center text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12">
+    <h2 class="subtitle-mobile-regular lg:subtitle-desktop-regular xl1367:subtitle-tv-regular text-center text-gray-600 dark:text-gray-300 mb-12">
       Nice things people have said about me:
     </h2>
 
@@ -23,22 +23,21 @@
               [src]="testimonial.avatar"
               [alt]="testimonial.name"
               class="w-full h-full object-cover"
-              onError="this.src='assets/images/placeholder.jpg'"
             />
           </div>
 
           <!-- Quote - larger text with more spacing -->
-          <p class="text-gray-600 dark:text-gray-300 text-center mb-8 text-lg leading-relaxed">
+          <p class="body2-regular text-gray-600 dark:text-gray-300 text-left mb-8">
             "{{ testimonial.quote }}"
           </p>
 
           <!-- Name - larger and bolder -->
-          <h3 class="text-gray-900 dark:text-white font-bold text-2xl text-center mb-2">
+          <h3 class="subtitle-mobile-semibold lg:subtitle-desktop-semibold xl1367:subtitle-tv-semibold text-gray-900 dark:text-gray-50 text-center mb-">
             {{ testimonial.name }}
           </h3>
 
           <!-- Title and company -->
-          <p class="text-gray-500 dark:text-gray-400 text-center">
+          <p class="body3-regular text-gray-600 dark:text-gray-300 text-center">
             {{ testimonial.title }}{{ testimonial.company ? ' - ' + testimonial.company : '' }}
           </p>
         </div>
