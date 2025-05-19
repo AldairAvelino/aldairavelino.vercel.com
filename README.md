@@ -1,60 +1,62 @@
-# 🚀 Portfolio Tecnológico
+# 🚀 Personal Portfolio
 
-Bem-vindo ao meu **Portfólio Pessoal**, um projeto cuidadosamente construído com **Angular 18** e estilizado com **Tailwind CSS**, com foco em performance, responsividade e visual tecnológico.
+Welcome to my **Personal Portfolio**, a project carefully built with **Angular 18** and styled using **Tailwind CSS**, focused on performance, responsiveness, and a clean techy vibe.
 
-> Este projeto representa minhas habilidades técnicas em desenvolvimento web moderno, com ênfase em design limpo, código escalável e tecnologia de ponta.
-
----
-
-## 🧠 Tecnologias Utilizadas
-
-- Angular 18 – framework robusto para aplicações web
-- Tailwind v3 – utilitário para criação de interfaces
-- TypeScript – tipagem estática
-- HTML5 & CSS3 – estrutura e estilização
+> This project shows off my development skills, with a strong focus on clean design, scalable code, and cutting-edge technology.
 
 ---
 
-## 🔧 Como Rodar Localmente
+## 🧠 Tech Stack
 
-Clone o repositório:
+- **Angular 18** – powerful framework for building web apps  
+- **Tailwind CSS v3** – utility-first framework for modern UI  
+- **TypeScript** – typed JavaScript for better scalability  
+- **HTML5 & CSS3** – solid structure and styling basics
+
+---
+
+## 🔧 Getting Started Locally
+
+Clone the repo:
 
 ```bash
 git clone https://github.com/AldairAvelino/aldairavelino.vercel.com
 ````
 
-```bash
-cd seu-repositorio
-````
+Move into the project folder:
 
-Instale as dependências:
+```bash
+cd your-repo-name
+```
+
+Install dependencies:
 
 ```bash
 npm install
 ```
 
-Inicie o servidor de desenvolvimento:
+Start the dev server:
 
 ```bash
 ng serve
 ```
 
-Abra no navegador:
+Open in your browser:
 [http://localhost:4200](http://localhost:4200)
 
-> O aplicativo será recarregado automaticamente sempre que houver alterações.
+> The app will auto-reload as you make changes to the codebase.
 
 ---
 
-## 🧱 Estrutura de Componentes
+## 🧱 Generating Components
 
-Cria novos componentes:
+To create a new component:
 
 ```bash
-ng generate component components/nome-do-componente
+ng generate component components/component-name
 ```
 
-Caso precisar criar um service ou uma outra dessas opções:
+Need to generate a service or something else?
 
 ```bash
 ng generate service|module|pipe|directive|class
@@ -62,10 +64,10 @@ ng generate service|module|pipe|directive|class
 
 ---
 
-## 🧑‍💻 Sobre o Autor
+## 🧑‍💻 About Me
 
-Sou um Desenvolvedor apaixonado por criar soluções tecnológicas com interfaces de alto impacto visual e ótima experiência de usuário fluída. Este portfólio é uma vitrine para os meus projetos, ideias e experimentos com tecnologias modernas. Entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/aldair-fernando-antonio-avelino/) ou veja mais projetos no meu [GitHub](https://github.com/AldairAvelino).
+I'm a developer who loves building smart tech solutions with slick, high-impact interfaces and smooth user experiences. This portfolio is a space where I showcase my projects, ideas, and experiments with modern web technologies. Let’s connect on [LinkedIn](https://www.linkedin.com/in/aldair-fernando-antonio-avelino/) or check out more of my work on [GitHub](https://github.com/AldairAvelino).
 
 ---
 
-> ⭐ **Se você curtiu esse projeto, não esqueça de dar uma estrela no repositório!**
+> ⭐ **If you like this portfolio layout, don’t forget to drop a star!**
