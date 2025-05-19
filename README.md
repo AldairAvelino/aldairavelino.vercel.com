@@ -1,27 +1,71 @@
-# AldairavelinoVercelCom
+# 🚀 Portfolio Tecnológico
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Bem-vindo ao meu **Portfólio Pessoal**, um projeto cuidadosamente construído com **Angular 18** e estilizado com **Tailwind CSS**, com foco em performance, responsividade e visual tecnológico.
 
-## Development server
+> Este projeto representa minhas habilidades técnicas em desenvolvimento web moderno, com ênfase em design limpo, código escalável e tecnologia de ponta.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🧠 Tecnologias Utilizadas
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular 18 – framework robusto para aplicações web
+- Tailwind v3 – utilitário para criação de interfaces
+- TypeScript – tipagem estática
+- HTML5 & CSS3 – estrutura e estilização
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🔧 Como Rodar Localmente
 
-## Running unit tests
+Clone o repositório:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/AldairAvelino/aldairavelino.vercel.com
+````
 
-## Running end-to-end tests
+```bash
+cd seu-repositorio
+````
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Instale as dependências:
 
-## Further help
+```bash
+npm install
+```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Inicie o servidor de desenvolvimento:
+
+```bash
+ng serve
+```
+
+Abra no navegador:
+[http://localhost:4200](http://localhost:4200)
+
+> O aplicativo será recarregado automaticamente sempre que houver alterações.
+
+---
+
+## 🧱 Estrutura de Componentes
+
+Cria novos componentes:
+
+```bash
+ng generate component components/nome-do-componente
+```
+
+Caso precisar criar um service ou uma outra dessas opções:
+
+```bash
+ng generate service|module|pipe|directive|class
+```
+
+---
+
+## 🧑‍💻 Sobre o Autor
+
+Sou um Desenvolvedor apaixonado por criar soluções tecnológicas com interfaces de alto impacto visual e ótima experiência de usuário fluída. Este portfólio é uma vitrine para os meus projetos, ideias e experimentos com tecnologias modernas. Entre em contato comigo pelo [LinkedIn](https://www.linkedin.com/in/aldair-fernando-antonio-avelino/) ou veja mais projetos no meu [GitHub](https://github.com/AldairAvelino).
+
+---
+
+> ⭐ **Se você curtiu esse projeto, não esqueça de dar uma estrela no repositório!**
