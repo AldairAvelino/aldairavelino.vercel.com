@@ -1,6 +1,6 @@
 # 🚀 Personal Portfolio
 
-Welcome to my **Personal Portfolio**, a project carefully built with **Angular 18** and styled using **Tailwind CSS**, focused on performance, responsiveness, and a clean techy vibe.
+Welcome to my [**Personal Portfolio**](https://aldairavelino.vercel.app/), a project carefully built with **Angular 18** and styled using **Tailwind CSS**, focused on performance, responsiveness, and a clean techy vibe.
 
 > This project shows off my development skills, with a strong focus on clean design, scalable code, and cutting-edge technology.
 
