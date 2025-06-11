@@ -36,4 +36,12 @@ export interface Contact {
   phone: string;
 }
 
+export interface SocialLink {
+  github: string;
+  instagram: string;
+  twitter: string;
+  linkedin: string;
+  youtube: string;
+}
+
 export type Theme = "light" | "dark"
