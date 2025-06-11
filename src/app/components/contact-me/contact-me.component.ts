@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { Contact } from '@models/interfaces';
+import { Contact, SocialLink } from '@models/interfaces';
+import { getSocialLinks } from '@core/utils/socials-link.utils';
 
 @Component({
   selector: 'app-contact-me',
@@ -11,6 +12,7 @@ import { Contact } from '@models/interfaces';
   styleUrl: './contact-me.component.scss',
 })
 export class ContactMeComponent {
+  socialLinks: SocialLink[] = getSocialLinks();
   contacts: Contact[] = [
     {
       email: 'aldair03avelino@gmail.com',

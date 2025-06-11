@@ -86,6 +86,10 @@
     @apply font-normal text-[18px] leading-[28px] tracking-[0em] font-inter;
   }
 
+  .body1-semibold {
+    @apply font-semibold text-[18px] leading-[28px] tracking-[0em] font-inter;
+  }
+
   .body1-mobile {
     @apply font-normal text-[16px] leading-[24px] tracking-[0em] font-inter;
   }
@@ -114,5 +118,15 @@
 
   .body3-medium {
     @apply font-medium text-[14px] leading-[20px] tracking-[0em] font-inter;
+  }
+
+  /* BODY4 */
+  .body4-regular {
+    @apply font-normal text-[15px] leading-[24px] tracking-[0em] font-inter;
+  }
+
+  /* BODY5 */
+  .body5-regular {
+    @apply font-normal text-[13px] leading-[24px] tracking-[0em] font-inter;
   }
 }
