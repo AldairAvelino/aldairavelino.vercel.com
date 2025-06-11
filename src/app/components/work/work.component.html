@@ -1,4 +1,4 @@
-<section id="works" class="py-16 md:py-24 bg-gray-50 dark:bg-gray-900">
+<section id="works" class="py-16 md:py-24 bg-white dark:bg-gray-950">
   <div class="container mx-auto px-4 sm:px-6 lg:px-8">
     <!-- Work badge -->
     <div class="flex justify-center mb-6">
@@ -20,7 +20,7 @@
           <!-- Mobile layout (stacked) -->
           <div class="block md:hidden">
             <!-- Image container with padding -->
-            <div class="p-5">
+            <div class="bg-gray-50 p-5">
               <div class="w-full overflow-hidden rounded-lg">
                 <img
                   [src]="work.image"
@@ -70,7 +70,7 @@
           <!-- Desktop layout (alternating) -->
           <div class="hidden md:flex" [ngClass]="{'flex-row-reverse': i % 2 !== 0}">
             <!-- Image container with exact dimensions -->
-            <div class="w-[480px] p-6 flex-shrink-0">
+            <div class="bg-gray-50 dark:bg-gray-700 w-[480px] p-6 flex-shrink-0">
               <div class="w-full h-[384px] overflow-hidden rounded-lg">
                 <img
                   [src]="work.image"
