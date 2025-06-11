@@ -16,8 +16,16 @@
     @apply font-semibold text-[36px] leading-[40px] tracking-[0em] font-inter;
   }
 
+  .heading-h2-tv {
+    @apply font-semibold text-[48px] leading-[56px] tracking-[-0.02em] font-inter;
+  }
+
   .heading-h2-desktop {
     @apply font-semibold text-[36px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
+  .heading-h2-tablet {
+    @apply font-semibold text-[30px] leading-[36px] tracking-[-0.02em] font-inter;
   }
 
   .heading-h2-mobile {
@@ -49,12 +57,20 @@
   }
 
   /* SUBTITLES */
+  .subtitle-tv-regular {
+    @apply font-normal text-[26px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
+  .subtitle-tv-semibold {
+    @apply font-semibold text-[26px] leading-[40px] tracking-[-0.02em] font-inter;
+  }
+
   .subtitle-desktop-regular {
-    @apply font-normal text-[20px] leading-[28px] tracking-[0em] font-inter;
+    @apply font-normal text-[18px] leading-[28px] tracking-[0em] font-inter;
   }
 
   .subtitle-desktop-semibold {
-    @apply font-semibold text-[20px] leading-[28px] tracking-[0em] font-inter;
+    @apply font-semibold text-[18px] leading-[28px] tracking-[0em] font-inter;
   }
 
   .subtitle-mobile-regular {

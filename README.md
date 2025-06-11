@@ -1,27 +1,73 @@
-# AldairavelinoVercelCom
+# 🚀 Personal Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
+Welcome to my [**Personal Portfolio**](https://aldairavelino.vercel.app/), a project carefully built with **Angular 18** and styled using **Tailwind CSS**, focused on performance, responsiveness, and a clean techy vibe.
 
-## Development server
+> This project shows off my development skills, with a strong focus on clean design, scalable code, and cutting-edge technology.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+---
 
-## Code scaffolding
+## 🧠 Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- **Angular 18** – powerful framework for building web apps  
+- **Tailwind CSS v3** – utility-first framework for modern UI  
+- **TypeScript** – typed JavaScript for better scalability  
+- **HTML5 & CSS3** – solid structure and styling basics
 
-## Build
+---
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## 🔧 Getting Started Locally
 
-## Running unit tests
+Clone the repo:
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```bash
+git clone https://github.com/AldairAvelino/aldairavelino.vercel.com
+````
 
-## Running end-to-end tests
+Move into the project folder:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
+cd your-repo-name
+```
 
-## Further help
+Install dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+```bash
+npm install
+```
+
+Start the dev server:
+
+```bash
+ng serve
+```
+
+Open in your browser:
+[http://localhost:4200](http://localhost:4200)
+
+> The app will auto-reload as you make changes to the codebase.
+
+---
+
+## 🧱 Generating Components
+
+To create a new component:
+
+```bash
+ng generate component components/component-name
+```
+
+Need to generate a service or something else?
+
+```bash
+ng generate service|module|pipe|directive|class
+```
+
+---
+
+## 🧑‍💻 About Me
+
+I'm a developer who loves building smart tech solutions with slick, high-impact interfaces and smooth user experiences. This portfolio is a space where I showcase my projects, ideas, and experiments with modern web technologies. Let’s connect on [LinkedIn](https://www.linkedin.com/in/aldair-fernando-antonio-avelino/) or check out more of my work on [GitHub](https://github.com/AldairAvelino).
+
+---
+
+> ⭐ **If you like this portfolio layout, don’t forget to drop a star!**
