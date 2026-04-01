@@ -19,7 +19,7 @@
             <!-- White frame with image -->
             <div class="absolute inset-0 bg-gray-50 dark:bg-gray-900 p-2">
               <img
-                src="assets/images/me/about.jpeg"
+                [src]="selectedPhoto"
                 alt="Aldair standing in front of a colorful painting"
                 class="w-full h-full object-cover"
                 onError="this.src='assets/images/placeholder.jpg'"
@@ -38,7 +38,7 @@
             <div class="absolute top-[-1.5rem] left-12 right-2 bottom-2 translate-x-4 w-full h-full bg-gray-50 dark:bg-gray-900 p-2">
               <!-- Actual image -->
               <img
-                src="assets/images/me/about.jpeg"
+                [src]="selectedPhoto"
                 alt="Aldair standing in front of a colorful painting"
                 class="w-full h-full object-cover"
                 onError="this.src='assets/images/placeholder.jpg'"
