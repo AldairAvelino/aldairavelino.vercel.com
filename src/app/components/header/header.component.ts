@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { ThemeService } from '@core/services/theme.service';
@@ -46,10 +46,26 @@ export class HeaderComponent {
 
   constructor(
     public themeService: ThemeService,
-    public languageService: LanguageService
+    public languageService: LanguageService,
+    private elementRef: ElementRef
   ) {
     this.checkMobile();
     window.addEventListener('resize', () => this.checkMobile());
+  }
+
+  @HostListener('document:click', ['$event'])
+  onDocumentClick(event: MouseEvent) {
+    if (!this.elementRef.nativeElement.contains(event.target)) {
+      this.isLanguageDropdownOpen = false;
+    }
+  }
+
+  @HostListener('document:keydown.escape', ['$event'])
+  onKeydownHandler(event: KeyboardEvent) {
+    this.isLanguageDropdownOpen = false;
+    if (this.isMobileMenuOpen) {
+      this.toggleMobileMenu();
+    }
   }
 
   checkMobile() {
