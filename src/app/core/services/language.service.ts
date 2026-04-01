@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
+import { TRANSLATIONS } from '../constants/translations';
 
 export type Language = 'pt' | 'en';
 
@@ -23,12 +24,14 @@ export class LanguageService {
   setLanguage(lang: Language) {
     this.currentLanguageSubject.next(lang);
     localStorage.setItem('language', lang);
-    // Here we can trigger any global language change logic if needed
-    // such as updating the lang attribute on the html element
     document.documentElement.lang = lang;
   }
 
   getCurrentLanguage(): Language {
     return this.currentLanguageSubject.value;
+  }
+
+  get translations() {
+    return TRANSLATIONS[this.getCurrentLanguage()];
   }
 }
