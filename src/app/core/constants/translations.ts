@@ -30,6 +30,65 @@ export const TRANSLATIONS = {
     skills: {
       badge: 'Skills',
       title: 'The skills, tools and technologies I am really good at:'
+    },
+    experience: {
+      badge: 'Experience',
+      subtitle: 'Here is a quick summary of my most recent experiences:',
+      list: [
+        {
+          title: 'Monograph Management System',
+          role: "FullStack Developer",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Nov 2021',
+          endDate: 'Present',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Ut pretium arcu et massa semper, id fringilla leo semper.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'Monograph Management System',
+          role: "Backend Developer",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Jul 2017',
+          endDate: 'Oct 2021',
+          responsibilities: [
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'Monograph Management System',
+          role: "FullStack Developer",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Dec 2015',
+          endDate: 'May 2017',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'UX/UI Designer',
+          role: "Frontend Developer",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Dec 2015',
+          endDate: 'May 2017',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        }
+      ]
     }
   },
   pt: {
@@ -63,6 +122,65 @@ export const TRANSLATIONS = {
     skills: {
       badge: 'Competências',
       title: 'As competências, ferramentas e tecnologias em que sou realmente bom:'
+    },
+    experience: {
+      badge: 'Experiência',
+      subtitle: 'Aqui está um breve resumo das minhas experiências mais recentes:',
+      list: [
+        {
+          title: 'Sistema de Gestão de Monografias',
+          role: "Desenvolvedor FullStack",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Nov 2021',
+          endDate: 'Presente',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Ut pretium arcu et massa semper, id fringilla leo semper.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'Sistema de Gestão de Monografias',
+          role: "Desenvolvedor Backend",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Jul 2017',
+          endDate: 'Out 2021',
+          responsibilities: [
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Sed quis justo ac magna.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'Sistema de Gestão de Monografias',
+          role: "Desenvolvedor FullStack",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Dez 2015',
+          endDate: 'Maio 2017',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        },
+        {
+          title: 'UX/UI Designer',
+          role: "Desenvolvedor Frontend",
+          company: 'Aldair Avelino',
+          logo: 'assets/images/logo.svg',
+          startDate: 'Dez 2015',
+          endDate: 'Maio 2017',
+          responsibilities: [
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+          ]
+        }
+      ]
     }
   }
 };
