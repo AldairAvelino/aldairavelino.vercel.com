@@ -12,7 +12,8 @@ import { Experience } from '@models/interfaces';
 export class ExperienceComponent {
   experiences: Experience[] = [
     {
-      title: 'Frontend Developer',
+      title: 'Sistema de Gestão de Monografias',
+      role: "FullStack Developer",
       company: 'Aldair Avelino',
       logo: 'assets/images/logo.svg',
       startDate: 'Nov 2021',
@@ -25,7 +26,8 @@ export class ExperienceComponent {
       ]
     },
     {
-      title: 'Backend Developer',
+      title: 'Sistema de Gestão de Monografias',
+      role: "Backend Developer",
       company: 'Aldair Avelino',
       logo: 'assets/images/logo.svg',
       startDate: 'Jul 2017',
@@ -38,7 +40,8 @@ export class ExperienceComponent {
       ]
     },
     {
-      title: 'FullStack Developer',
+      title: 'Sistema de Gestão de Monografias',
+      role: "FullStack Developer",
       company: 'Aldair Avelino',
       logo: 'assets/images/logo.svg',
       startDate: 'Dec 2015',
@@ -50,6 +53,7 @@ export class ExperienceComponent {
     },
     {
       title: 'UX/UI Designer',
+      role: "Frontend Developer",
       company: 'Aldair Avelino',
       logo: 'assets/images/logo.svg',
       startDate: 'Dec 2015',
