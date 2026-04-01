@@ -89,6 +89,36 @@ export const TRANSLATIONS = {
           ]
         }
       ]
+    },
+    work: {
+      badge: 'Work',
+      subtitle: 'Some of the noteworthy works I have built:',
+      list: [
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/about.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
+        },
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/hero.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
+        },
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/hero.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
+        }
+      ]
     }
   },
   pt: {
@@ -179,6 +209,36 @@ export const TRANSLATIONS = {
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
           ]
+        }
+      ]
+    },
+    work: {
+      badge: 'Trabalho',
+      subtitle: 'Alguns dos trabalhos notáveis que construí:',
+      list: [
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/about.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
+        },
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/hero.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
+        },
+        {
+          title: 'Kibaku',
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
+          image: 'assets/images/me/hero.jpeg',
+          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
+          liveUrl: 'https://example.com/kibaku',
+          githubUrl: 'https://github.com/username/kibaku'
         }
       ]
     }
