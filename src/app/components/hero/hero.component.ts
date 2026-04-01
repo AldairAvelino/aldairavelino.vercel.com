@@ -1,8 +1,9 @@
 import { SocialLink } from '@models/interfaces';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getSocialLinks } from '@core/utils/socials-link.utils';
 import { getRandomPhoto } from '@core/utils/random-photo.util';
+import { LanguageService } from '@core/services/language.service';
 
 @Component({
   selector: 'app-hero',
@@ -11,7 +12,7 @@ import { getRandomPhoto } from '@core/utils/random-photo.util';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit {
   randomPhotos: string[] = [
     "assets/images/me/hero.jpeg",
     "assets/images/me/blue-shirt.jpg"
@@ -20,11 +21,12 @@ export class HeroComponent {
   selectedPhoto!: string;
   socialLinks: SocialLink[] = getSocialLinks();
 
+  constructor(public languageService: LanguageService) {}
+
   ngOnInit(): void {
     this.selectedPhoto = getRandomPhoto(
       this.randomPhotos,
       'hero'
     );
   }
-
 }
