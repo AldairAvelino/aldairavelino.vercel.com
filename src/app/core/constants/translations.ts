@@ -26,6 +26,10 @@ export const TRANSLATIONS = {
       p4: "One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite ",
       p4_2: ". I'm always eager to connect with like-minded individuals and businesses looking to bring innovative ideas to life. Let's create something amazing together!",
       quote: '"Programs must be written for people to read, and only incidentally for machines to execute."'
+    },
+    skills: {
+      badge: 'Skills',
+      title: 'The skills, tools and technologies I am really good at:'
     }
   },
   pt: {
@@ -55,6 +59,10 @@ export const TRANSLATIONS = {
       p4: "Uma última coisa, estou disponível para trabalho freelancer, por isso sente-te à vontade para entrar em contacto e dizer olá! Prometo que não mordo ",
       p4_2: ". Estou sempre ansioso por me conectar com indivíduos e empresas que pensam da mesma forma e que procuram dar vida a ideias inovadoras. Vamos criar algo incrível juntos!",
       quote: '"Os programas devem ser escritos para as pessoas lerem, e apenas incidentalmente para as máquinas executarem."'
+    },
+    skills: {
+      badge: 'Competências',
+      title: 'As competências, ferramentas e tecnologias em que sou realmente bom:'
     }
   }
 };
