@@ -16,6 +16,7 @@ export interface Work {
 
 export interface Experience {
   title: string;
+  role: string;
   company?: string;
   logo?: string;
   startDate: string;
