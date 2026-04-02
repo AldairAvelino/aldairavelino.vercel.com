@@ -146,6 +146,11 @@ export const TRANSLATIONS = {
           avatar: 'assets/images/me/hero.jpeg'
         }
       ]
+    },
+    contact: {
+      badge: 'Get in touch',
+      subtitle: "What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.",
+      socialText: 'You may also find me on these platforms!'
     }
   },
   pt: {
@@ -295,6 +300,11 @@ export const TRANSLATIONS = {
           avatar: 'assets/images/me/hero.jpeg'
         }
       ]
+    },
+    contact: {
+      badge: 'Entrar em contacto',
+      subtitle: 'Qual é o próximo passo? Sinta-se à vontade para entrar em contacto comigo se estiver à procura de um desenvolvedor, tiver uma dúvida ou simplesmente quiser conectar-se.',
+      socialText: 'Também me podes encontrar nestas plataformas!'
     }
   }
 };
