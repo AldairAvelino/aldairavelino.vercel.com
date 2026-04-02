@@ -96,27 +96,15 @@ export const TRANSLATIONS = {
       list: [
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/about.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         },
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/hero.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         },
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/hero.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         }
       ]
     },
@@ -254,27 +242,15 @@ export const TRANSLATIONS = {
       list: [
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/about.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         },
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/hero.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         },
         {
           title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-          image: 'assets/images/me/hero.jpeg',
-          technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-          liveUrl: 'https://example.com/kibaku',
-          githubUrl: 'https://github.com/username/kibaku'
+          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
         }
       ]
     },
