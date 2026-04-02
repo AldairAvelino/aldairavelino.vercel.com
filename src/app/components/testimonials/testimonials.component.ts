@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LanguageService } from '@core/services/language.service';
+import { getTestimonialsStaticData } from '@core/utils/testimonials.utils';
+import { Testimonial } from '@models/interfaces';
 
 @Component({
   selector: 'app-testimonials',
@@ -10,9 +12,15 @@ import { LanguageService } from '@core/services/language.service';
   styleUrl: './testimonials.component.scss',
 })
 export class TestimonialsComponent {
+  private staticData = getTestimonialsStaticData();
+
   constructor(public languageService: LanguageService) {}
 
-  get testimonials() {
-    return this.languageService.translations.testimonials.list;
+  get testimonials(): Testimonial[] {
+    const translations = this.languageService.translations.testimonials.list;
+    return translations.map((translation: any, index: number) => ({
+      ...translation,
+      ...this.staticData[index]
+    }));
   }
 }

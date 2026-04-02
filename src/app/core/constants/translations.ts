@@ -102,24 +102,15 @@ export const TRANSLATIONS = {
       list: [
         {
           quote: 'Job well done! I am really impressed. He is very very good at what he does! I would recommend Aldair and will rehire in the future for Frontend development.',
-          name: 'John Doe',
-          title: 'Founder',
-          company: 'Kibaku',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Founder'
         },
         {
           quote: 'Great guy, highly recommended for any COMPLEX front-end development job! His skills are top-notch and he will be an amazing addition to any team.',
-          name: 'Joana Doe',
-          title: 'Founder',
-          company: 'Unitel',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Founder'
         },
         {
           quote: 'Aldair was extremely easy and pleasant to work with and he truly cares about the project being a success. Aldair has a high level of knowledge and was able to work on my MERN stack application without any issues.',
-          name: 'John Doe',
-          title: 'Freelancer',
-          company: '',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Freelancer'
         }
       ]
     },
@@ -236,24 +227,15 @@ export const TRANSLATIONS = {
       list: [
         {
           quote: 'Trabalho bem feito! Estou realmente impressionado. Ele é muito, muito bom no que faz! Eu recomendaria o Aldair e voltaria a contratá-lo no futuro para desenvolvimento Frontend.',
-          name: 'John Doe',
-          title: 'Fundador',
-          company: 'Kibaku',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Fundador'
         },
         {
           quote: 'Excelente pessoa, altamente recomendado para qualquer trabalho de desenvolvimento front-end COMPLEXO! As suas competências são de alto nível e ele será uma adição incrível para qualquer equipa.',
-          name: 'Joana Doe',
-          title: 'Fundadora',
-          company: 'Unitel',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Fundadora'
         },
         {
           quote: 'Foi extremamente fácil e agradável trabalhar com o Aldair e ele realmente preocupa-se com o sucesso do projeto. O Aldair tem um alto nível de conhecimento e foi capaz de trabalhar na minha aplicação MERN stack sem quaisquer problemas.',
-          name: 'John Doe',
-          title: 'Freelancer',
-          company: '',
-          avatar: 'assets/images/me/hero.jpeg'
+          title: 'Freelancer'
         }
       ]
     },
