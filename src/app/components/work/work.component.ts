@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { LanguageService } from '@core/services/language.service';
+import { getWorksStaticData } from '@core/utils/work.utils';
 import { Work } from '@models/interfaces';
 
 @Component({
@@ -10,30 +12,15 @@ import { Work } from '@models/interfaces';
   styleUrl: './work.component.scss',
 })
 export class WorkComponent {
-  works: Work[] = [
-    {
-      title: 'Kibaku',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-      image: 'assets/images/me/about.jpeg',
-      technologies: ['React', 'Next.js', 'TypeScript', 'Next.js', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-      liveUrl: 'https://example.com/kibaku',
-      githubUrl: 'https://github.com/username/kibaku'
-    },
-    {
-      title: 'Kibaku',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-      image: 'assets/images/me/hero.jpeg',
-      technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-      liveUrl: 'https://example.com/kibaku',
-      githubUrl: 'https://github.com/username/kibaku'
-    },
-    {
-      title: 'Kibaku',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.',
-      image: 'assets/images/me/hero.jpeg',
-      technologies: ['React', 'Next.js', 'TypeScript', 'PostgreSQL', 'Tailwindcss', 'Figma', 'Cypress', 'Storybook', 'Git'],
-      liveUrl: 'https://example.com/kibaku',
-      githubUrl: 'https://github.com/username/kibaku'
-    }
-  ];
+  private staticData = getWorksStaticData();
+
+  constructor(public languageService: LanguageService) {}
+
+  get works(): Work[] {
+    const translations = this.languageService.translations.work.list;
+    return translations.map((translation: any, index: number) => ({
+      ...translation,
+      ...this.staticData[index]
+    }));
+  }
 }

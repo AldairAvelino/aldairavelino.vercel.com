@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { getCurrentYear } from '@core/utils/year.utils';
+import { LanguageService } from '@core/services/language.service';
 
 @Component({
   selector: 'app-footer',
@@ -12,4 +13,10 @@ import { getCurrentYear } from '@core/utils/year.utils';
 export class FooterComponent {
   currentYear = getCurrentYear();
   author: string = 'Aldair Avelino';
+
+  constructor(public languageService: LanguageService) {}
+
+  get translations() {
+    return this.languageService.translations;
+  }
 }

@@ -3,7 +3,7 @@
     <!-- About me badge - centered on all screen sizes -->
     <div class="flex justify-center mb-12">
       <div class="flex items-center justify-center body3-medium bg-gray-200 dark:bg-gray-700 rounded-full px-5 py-1 text-gray-600 dark:text-gray-300 w-28 h-8">
-        About me
+        {{ translations.about.badge }}
       </div>
     </div>
 
@@ -19,7 +19,7 @@
             <!-- White frame with image -->
             <div class="absolute inset-0 bg-gray-50 dark:bg-gray-900 p-2">
               <img
-                src="assets/images/me/about.jpeg"
+                [src]="selectedPhoto"
                 alt="Aldair standing in front of a colorful painting"
                 class="w-full h-full object-cover"
                 onError="this.src='assets/images/placeholder.jpg'"
@@ -38,7 +38,7 @@
             <div class="absolute top-[-1.5rem] left-12 right-2 bottom-2 translate-x-4 w-full h-full bg-gray-50 dark:bg-gray-900 p-2">
               <!-- Actual image -->
               <img
-                src="assets/images/me/about.jpeg"
+                [src]="selectedPhoto"
                 alt="Aldair standing in front of a colorful painting"
                 class="w-full h-full object-cover"
                 onError="this.src='assets/images/placeholder.jpg'"
@@ -51,28 +51,28 @@
       <!-- About content -->
       <div class="w-full md:w-7/12">
         <h2 class="heading-h3-mobile-semi md:heading-h3-tablet-semi lg:heading-h3-desktop xl1367:heading-h3-tv text-gray-900 dark:text-white mb-6">
-          Curious about me? Here you have it:
+          {{ translations.about.title }}
         </h2>
 
         <div class="w-full md:w-[86%] space-y-4 text-gray-600 dark:text-gray-300">
           <p class="body2-regular">
-            I'm diving headfirst into the world of coding as a Junior Fullstack Developer, fueled by my passion to turn ideas into cool, efficient solutions. My journey's all about blending creativity with technology to make things work smoother than butter on a hot pan! Let's build some digital magic together!
+            {{ translations.about.p1 }}
           </p>
 
           <p class="body2-regular">
-            I am very much a progressive thinker and enjoy working on products end to end, from ideation all the way to development. My approach is to create seamless, intuitive user experiences that not only meet but exceed expectations. Whether it's designing a sleek interface or optimizing backend processes, I'm all in.
+            {{ translations.about.p2 }}
           </p>
 
           <p class="body2-regular">
-            You can follow me on <a href="#" class="body2-underline text-blue-600 dark:text-blue-400">Twitter</a> where I share tech-related bites and build in public. Join me as I navigate the ever-evolving landscape of technology, sharing insights, challenges, and breakthroughs along the way. You can also check out my <a href="#" class="body2-underline text-blue-600 dark:text-blue-400">GitHub</a> to see the projects I'm working on and maybe even collaborate on something exciting!
+            {{ translations.about.p3_1 }} <a href="#" class="body2-underline text-blue-600 dark:text-blue-400">Twitter</a> {{ translations.about.p3_2 }} <a href="#" class="body2-underline text-blue-600 dark:text-blue-400">GitHub</a> {{ translations.about.p3_3 }}
           </p>
 
           <p class="body2-regular">
-            One last thing, I'm available for freelance work, so feel free to reach out and say hello! I promise I don't bite <span class="inline-block"><img src="assets/images/blink.png" alt="blink emogi"></span>. I'm always eager to connect with like-minded individuals and businesses looking to bring innovative ideas to life. Let's create something amazing together!
+            {{ translations.about.p4 }} <span class="inline-block"><img src="assets/images/blink.png" alt="blink emogi"></span>{{ translations.about.p4_2 }}
           </p>
 
-          <p class="body2-regular">
-            "Programs must be written for people to read, and only incidentally for machines to execute." - <span class="font-semibold">Harold Abelson</span>
+          <p class="body2-regular italic">
+            {{ translations.about.quote }} - <span class="font-semibold not-italic">Harold Abelson</span>
           </p>
         </div>
       </div>

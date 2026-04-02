@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Contact, SocialLink } from '@models/interfaces';
 import { getSocialLinks } from '@core/utils/socials-link.utils';
+import { LanguageService } from '@core/services/language.service';
 
 @Component({
   selector: 'app-contact-me',
@@ -19,6 +20,12 @@ export class ContactMeComponent {
       phone: '+244 948 901 733',
     }
   ];
+
+  constructor(public languageService: LanguageService) {}
+
+  get translations() {
+    return this.languageService.translations;
+  }
 
   copyToClipboard(text: string): void {
     navigator.clipboard.writeText(text);

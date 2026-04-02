@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Skill } from '@models/interfaces';
 import { Subscription } from 'rxjs';
 import { ThemeService } from '@core/services/theme.service';
+import { LanguageService } from '@core/services/language.service';
 import { getSkills } from '@core/utils/skills.utils';
 
 @Component({
@@ -16,7 +17,14 @@ export class SkillsComponent implements OnInit, OnDestroy {
   private themeSubscription: Subscription | undefined;
   skills: Skill[] = getSkills();
 
-  constructor(private themeService: ThemeService) {}
+  constructor(
+    private themeService: ThemeService,
+    public languageService: LanguageService
+  ) {}
+
+  get translations() {
+    return this.languageService.translations;
+  }
 
   ngOnInit(): void {
     this.themeSubscription = this.themeService.isDarkTheme$.subscribe((isDark) => {
