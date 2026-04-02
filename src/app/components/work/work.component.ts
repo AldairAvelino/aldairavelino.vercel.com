@@ -16,6 +16,10 @@ export class WorkComponent {
 
   constructor(public languageService: LanguageService) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   get works(): Work[] {
     const translations = this.languageService.translations.work.list;
     return translations.map((translation: any, index: number) => ({

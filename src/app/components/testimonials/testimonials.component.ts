@@ -16,6 +16,10 @@ export class TestimonialsComponent {
 
   constructor(public languageService: LanguageService) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   get testimonials(): Testimonial[] {
     const translations = this.languageService.translations.testimonials.list;
     return translations.map((translation: any, index: number) => ({
