@@ -38,18 +38,23 @@ export const TRANSLATIONS = {
         {
           title: 'Monograph Management System',
           role: "FullStack Developer",
-          company: 'Aldair Avelino',
+          company: 'Freelancer',
+          startDate: 'Jan 2026',
+          endDate: 'Apr 2026',
           responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Ut pretium arcu et massa semper, id fringilla leo semper.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'Collaborated directly with the client in defining requirements and features',
+            'Implemented the interface with a focus on usability, including dashboard, monograph search and administrative areas',
+            'Structured the system to support multiple profiles with distinct permissions',
+            'Developed user authentication and authorization features',
+            'Modeled and implemented role-based access control (RBAC)'
           ]
         },
         {
           title: 'Monograph Management System',
           role: "Backend Developer",
           company: 'Aldair Avelino',
+          startDate: 'Jul 2017',
+          endDate: 'Oct 2021',
           responsibilities: [
             'Sed quis justo ac magna.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -61,6 +66,8 @@ export const TRANSLATIONS = {
           title: 'Monograph Management System',
           role: "FullStack Developer",
           company: 'Aldair Avelino',
+          startDate: 'Dec 2015',
+          endDate: 'May 2017',
           responsibilities: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -70,6 +77,8 @@ export const TRANSLATIONS = {
           title: 'UX/UI Designer',
           role: "Frontend Developer",
           company: 'Aldair Avelino',
+          startDate: 'Dec 2015',
+          endDate: 'May 2017',
           responsibilities: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -163,18 +172,23 @@ export const TRANSLATIONS = {
         {
           title: 'Sistema de Gestão de Monografias',
           role: "Desenvolvedor FullStack",
-          company: 'Aldair Avelino',
+          company: 'Freelancer',
+          startDate: 'Jan 2026',
+          endDate: 'Abr 2026',
           responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Ut pretium arcu et massa semper, id fringilla leo semper.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'Colaborei diretamente com o cliente na definição de requisitos e funcionalidades',
+            'Implementei a interface com foco em usabilidade, incluindo dashboard, pesquisa de monografias e áreas administrativas',
+            'Estruturei o sistema para suportar múltiplos perfis com permissões distintas',
+            'Desenvolvi funcionalidades de autenticação e autorização de usuários',
+            'Modelei e implementei controle de acesso baseado em perfis(RBAC)'
           ]
         },
         {
           title: 'Sistema de Gestão de Monografias',
           role: "Desenvolvedor Backend",
           company: 'Aldair Avelino',
+          startDate: 'Jul 2017',
+          endDate: 'Out 2021',
           responsibilities: [
             'Sed quis justo ac magna.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
@@ -186,6 +200,8 @@ export const TRANSLATIONS = {
           title: 'Sistema de Gestão de Monografias',
           role: "Desenvolvedor FullStack",
           company: 'Aldair Avelino',
+          startDate: 'Dez 2015',
+          endDate: 'Mai 2017',
           responsibilities: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -195,6 +211,8 @@ export const TRANSLATIONS = {
           title: 'UX/UI Designer',
           role: "Desenvolvedor Frontend",
           company: 'Aldair Avelino',
+          startDate: 'Dez 2015',
+          endDate: 'Mai 2017',
           responsibilities: [
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
             'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
