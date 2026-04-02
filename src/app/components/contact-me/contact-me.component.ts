@@ -23,6 +23,10 @@ export class ContactMeComponent {
 
   constructor(public languageService: LanguageService) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   copyToClipboard(text: string): void {
     navigator.clipboard.writeText(text);
   }

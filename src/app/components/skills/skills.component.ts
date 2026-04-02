@@ -22,6 +22,10 @@ export class SkillsComponent implements OnInit, OnDestroy {
     public languageService: LanguageService
   ) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   ngOnInit(): void {
     this.themeSubscription = this.themeService.isDarkTheme$.subscribe((isDark) => {
       this.skills.forEach((skill) => {

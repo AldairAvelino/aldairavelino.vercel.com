@@ -53,6 +53,10 @@ export class HeaderComponent {
     window.addEventListener('resize', () => this.checkMobile());
   }
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   @HostListener('document:click', ['$event'])
   onDocumentClick(event: MouseEvent) {
     if (!this.elementRef.nativeElement.contains(event.target)) {
@@ -61,7 +65,7 @@ export class HeaderComponent {
   }
 
   @HostListener('document:keydown.escape', ['$event'])
-  onKeydownHandler(event: KeyboardEvent) {
+  onKeydownHandler(event: Event) {
     this.isLanguageDropdownOpen = false;
     if (this.isMobileMenuOpen) {
       this.toggleMobileMenu();

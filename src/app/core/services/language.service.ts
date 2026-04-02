@@ -31,7 +31,7 @@ export class LanguageService {
     return this.currentLanguageSubject.value;
   }
 
-  get translations() {
+  get translations(): any {
     return TRANSLATIONS[this.getCurrentLanguage()];
   }
 }

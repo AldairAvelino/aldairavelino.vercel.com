@@ -15,4 +15,8 @@ export class FooterComponent {
   author: string = 'Aldair Avelino';
 
   constructor(public languageService: LanguageService) {}
+
+  get translations() {
+    return this.languageService.translations;
+  }
 }

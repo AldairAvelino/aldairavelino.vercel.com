@@ -23,6 +23,10 @@ export class HeroComponent implements OnInit {
 
   constructor(public languageService: LanguageService) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   ngOnInit(): void {
     this.selectedPhoto = getRandomPhoto(
       this.randomPhotos,
