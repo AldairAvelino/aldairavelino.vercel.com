@@ -1,4 +1,4 @@
-import { Component, HostListener, ElementRef } from '@angular/core';
+import { Component, HostListener, ElementRef, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { ThemeService } from '@core/services/theme.service';
@@ -47,7 +47,8 @@ export class HeaderComponent {
   constructor(
     public themeService: ThemeService,
     public languageService: LanguageService,
-    private elementRef: ElementRef
+    private elementRef: ElementRef,
+    private cdr: ChangeDetectorRef
   ) {
     this.checkMobile();
     window.addEventListener('resize', () => this.checkMobile());
@@ -86,6 +87,9 @@ export class HeaderComponent {
 
     // Prevent scrolling when menu is open
     document.body.style.overflow = this.isMobileMenuOpen ? 'hidden' : '';
+
+    // Force change detection to render the menu items immediately
+    this.cdr.detectChanges();
   }
 
   toggleLanguageDropdown() {
