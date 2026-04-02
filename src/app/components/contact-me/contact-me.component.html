@@ -1,10 +1,10 @@
 <div class="flex flex-col items-center justify-center w-full max-w-3xl mx-auto px-4 py-16 md:py-24 text-center">
-  <div class="flex items-center justify-center body3-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full px-4 py-1 mb-4 w-32 h-8">
-    Get in touch
+  <div class="flex items-center justify-center body3-medium bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-200 rounded-full px-4 py-1 mb-4 w-auto min-w-32 h-8">
+    {{ languageService.translations.contact.badge }}
   </div>
 
   <p class="body4-regular md:body2-regular text-gray-700 dark:text-gray-200 mb-6 max-w-lg">
-    What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.
+    {{ languageService.translations.contact.subtitle }}
   </p>
 
   <div class="flex flex-col w-full max-w-md gap-4 mb-6">
@@ -53,7 +53,7 @@
   </div>
 
   <div class="mt-2">
-    <p class="body3-regular text-gray-600 dark:text-gray-400 mb-4">You may also find me on these platforms!</p>
+    <p class="body3-regular text-gray-600 dark:text-gray-400 mb-4">{{ languageService.translations.contact.socialText }}</p>
     <div class="flex justify-center gap-4">
       <!-- GitHub -->
       <a [href]="socialLinks[0].github" target="_blank" class="p-2 border border-gray-200 dark:border-gray-700 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors group" aria-label="GitHub">
