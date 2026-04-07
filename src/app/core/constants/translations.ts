@@ -52,7 +52,7 @@ export const TRANSLATIONS = {
       ]
     },
     work: {
-      badge: 'Work',
+      badge: 'Projects',
       subtitle: 'Some of the noteworthy works I have built:',
       list: [
         {
@@ -150,7 +150,7 @@ export const TRANSLATIONS = {
       ]
     },
     work: {
-      badge: 'Trabalho',
+      badge: 'Projetos',
       subtitle: 'Alguns dos trabalhos notáveis que construí:',
       list: [
         {
