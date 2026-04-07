@@ -48,42 +48,6 @@ export const TRANSLATIONS = {
             'Developed user authentication and authorization features',
             'Modeled and implemented role-based access control (RBAC)'
           ]
-        },
-        {
-          title: 'Monograph Management System',
-          role: "Backend Developer",
-          company: 'Aldair Avelino',
-          startDate: 'Jul 2017',
-          endDate: 'Oct 2021',
-          responsibilities: [
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Monograph Management System',
-          role: "FullStack Developer",
-          company: 'Aldair Avelino',
-          startDate: 'Dec 2015',
-          endDate: 'May 2017',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'UX/UI Designer',
-          role: "Frontend Developer",
-          company: 'Aldair Avelino',
-          startDate: 'Dec 2015',
-          endDate: 'May 2017',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
         }
       ]
     },
@@ -92,16 +56,16 @@ export const TRANSLATIONS = {
       subtitle: 'Some of the noteworthy works I have built:',
       list: [
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'Agricargas',
+          description: 'Dedicated platform for the digital presence of an Angolan startup focused on socio-economic impact, aiming to improve and scale the distribution of agricultural products nationwide'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'PickaSeat',
+          description: 'Modern and immersive platform for cinema ticket booking. Combining cutting-edge technology with a refined user interface, PickaSeat offers interactive animations and a seamless user experience, ideal for showcasing frontend development skills.'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'EduBrain',
+          description: 'Modern educational management platform designed to simplify academic tracking, integrating artificial intelligence for deep insights into student performance.'
         }
       ]
     },
@@ -182,42 +146,6 @@ export const TRANSLATIONS = {
             'Desenvolvi funcionalidades de autenticação e autorização de usuários',
             'Modelei e implementei controle de acesso baseado em perfis(RBAC)'
           ]
-        },
-        {
-          title: 'Sistema de Gestão de Monografias',
-          role: "Desenvolvedor Backend",
-          company: 'Aldair Avelino',
-          startDate: 'Jul 2017',
-          endDate: 'Out 2021',
-          responsibilities: [
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Sistema de Gestão de Monografias',
-          role: "Desenvolvedor FullStack",
-          company: 'Aldair Avelino',
-          startDate: 'Dez 2015',
-          endDate: 'Mai 2017',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'UX/UI Designer',
-          role: "Desenvolvedor Frontend",
-          company: 'Aldair Avelino',
-          startDate: 'Dez 2015',
-          endDate: 'Mai 2017',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
         }
       ]
     },
@@ -226,16 +154,16 @@ export const TRANSLATIONS = {
       subtitle: 'Alguns dos trabalhos notáveis que construí:',
       list: [
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'Agricargas',
+          description: 'Plataforma dedicada a presença digital da startup angola de impacto socioeconômico que visa no melhor e maior escoamento de produtos agrícolas a nível nacional'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'PickaSeat',
+          description: 'Plataforma moderna e imersiva para reserva de ingressos de cinema. Combinando tecnologia de ponta a ponta, a PickaSeat oferece uma interface de usuário refinada com animações interativas e uma experiência de usuário fluida, ideal para demonstrar habilidades em desenvolvimento frontend'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'EduBrain',
+          description: 'Plataforma moderna de gestão educacional desenvolvida para simplificar o acompanhamento acadêmico, integrando inteligência artificial para insights profundos sobre o desempenho dos alunos'
         }
       ]
     },
