@@ -16,6 +16,10 @@ export class ExperienceComponent {
 
   constructor(public languageService: LanguageService) {}
 
+  get translations() {
+    return this.languageService.translations;
+  }
+
   get experiences(): Experience[] {
     const translations = this.languageService.translations.experience.list;
     return translations.map((translation: any, index: number) => ({

@@ -10,6 +10,7 @@ export type Language = 'pt' | 'en';
 export class LanguageService {
   private currentLanguageSubject = new BehaviorSubject<Language>('en');
   currentLanguage$ = this.currentLanguageSubject.asObservable();
+  translations: any;
 
   constructor() {
     this.loadLanguage();
@@ -23,15 +24,12 @@ export class LanguageService {
 
   setLanguage(lang: Language) {
     this.currentLanguageSubject.next(lang);
+    this.translations = TRANSLATIONS[lang];
     localStorage.setItem('language', lang);
     document.documentElement.lang = lang;
   }
 
   getCurrentLanguage(): Language {
     return this.currentLanguageSubject.value;
-  }
-
-  get translations(): any {
-    return TRANSLATIONS[this.getCurrentLanguage()];
   }
 }

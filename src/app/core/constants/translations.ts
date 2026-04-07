@@ -38,61 +38,34 @@ export const TRANSLATIONS = {
         {
           title: 'Monograph Management System',
           role: "FullStack Developer",
-          company: 'Aldair Avelino',
+          company: 'Freelancer',
+          startDate: 'Jan 2026',
+          endDate: 'Apr 2026',
           responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Ut pretium arcu et massa semper, id fringilla leo semper.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Monograph Management System',
-          role: "Backend Developer",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Monograph Management System',
-          role: "FullStack Developer",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'UX/UI Designer',
-          role: "Frontend Developer",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'Collaborated directly with the client in defining requirements and features',
+            'Implemented the interface with a focus on usability, including dashboard, monograph search and administrative areas',
+            'Structured the system to support multiple profiles with distinct permissions',
+            'Developed user authentication and authorization features',
+            'Modeled and implemented role-based access control (RBAC)'
           ]
         }
       ]
     },
     work: {
-      badge: 'Work',
+      badge: 'Projects',
       subtitle: 'Some of the noteworthy works I have built:',
       list: [
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'Agricargas',
+          description: 'Dedicated platform for the digital presence of an Angolan startup focused on socio-economic impact, aiming to improve and scale the distribution of agricultural products nationwide'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'PickaSeat',
+          description: 'Modern and immersive platform for cinema ticket booking. Combining cutting-edge technology with a refined user interface, PickaSeat offers interactive animations and a seamless user experience, ideal for showcasing frontend development skills.'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'EduBrain',
+          description: 'Modern educational management platform designed to simplify academic tracking, integrating artificial intelligence for deep insights into student performance.'
         }
       ]
     },
@@ -163,61 +136,34 @@ export const TRANSLATIONS = {
         {
           title: 'Sistema de Gestão de Monografias',
           role: "Desenvolvedor FullStack",
-          company: 'Aldair Avelino',
+          company: 'Freelancer',
+          startDate: 'Jan 2026',
+          endDate: 'Abr 2026',
           responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Ut pretium arcu et massa semper, id fringilla leo semper.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Sistema de Gestão de Monografias',
-          role: "Desenvolvedor Backend",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Sed quis justo ac magna.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'Sistema de Gestão de Monografias',
-          role: "Desenvolvedor FullStack",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-          ]
-        },
-        {
-          title: 'UX/UI Designer',
-          role: "Desenvolvedor Frontend",
-          company: 'Aldair Avelino',
-          responsibilities: [
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-            'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+            'Colaborei diretamente com o cliente na definição de requisitos e funcionalidades',
+            'Implementei a interface com foco em usabilidade, incluindo dashboard, pesquisa de monografias e áreas administrativas',
+            'Estruturei o sistema para suportar múltiplos perfis com permissões distintas',
+            'Desenvolvi funcionalidades de autenticação e autorização de usuários',
+            'Modelei e implementei controle de acesso baseado em perfis(RBAC)'
           ]
         }
       ]
     },
     work: {
-      badge: 'Trabalho',
+      badge: 'Projetos',
       subtitle: 'Alguns dos trabalhos notáveis que construí:',
       list: [
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'Agricargas',
+          description: 'Plataforma dedicada a presença digital da startup angola de impacto socioeconômico que visa no melhor e maior escoamento de produtos agrícolas a nível nacional'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'PickaSeat',
+          description: 'Plataforma moderna e imersiva para reserva de ingressos de cinema. Combinando tecnologia de ponta a ponta, a PickaSeat oferece uma interface de usuário refinada com animações interativas e uma experiência de usuário fluida, ideal para demonstrar habilidades em desenvolvimento frontend'
         },
         {
-          title: 'Kibaku',
-          description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas nec urna ac tellus volutpat viverra. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae.'
+          title: 'EduBrain',
+          description: 'Plataforma moderna de gestão educacional desenvolvida para simplificar o acompanhamento acadêmico, integrando inteligência artificial para insights profundos sobre o desempenho dos alunos'
         }
       ]
     },
