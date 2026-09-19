@@ -19,7 +19,7 @@ export function getWorksStaticData(): WorkStaticData[] {
     {
       image: 'assets/images/work/edubrain.png',
       technologies: ['Next.js', 'TypeScript', 'Firebase', 'Tailwindcss', 'Figma', 'Git'],
-      liveUrl: 'https://edubraingest.vercel.app/',
+      liveUrl: 'https://escola360.vercel.app',
       githubUrl: 'https://github.com/AldairAvelino/EduBrain'
     }
   ];
